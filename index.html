@@ -1,0 +1,141 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choques en Hermosillo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        img {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .section {
+            background: #ddd;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .form-container {
+            background: #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            input, button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CHOQUES EN HERMOSILLO</h1>
+        <p>Los <span class="highlight">accidentes de tránsito</span> siguen siendo una de las principales <span class="highlight">causas de muerte</span> en la <span class="highlight">ciudad de Hermosillo</span>. Durante los últimos años, el número de accidentes ha ido en aumento debido a factores como el exceso de velocidad, el uso del celular al conducir y la falta de precaución en los cruces más transitados.</p>
+        
+        <img src="imagen1.jpg" alt="Accidente de tránsito en Hermosillo">
+        
+        <p>Según el <span class="highlight">informe oficial de la Policía Municipal</span>, en lo que va del año se han registrado <span class="highlight">más de 1,639 accidentes</span>, con un aumento significativo en los meses de mayor tráfico. En comparación con el año anterior, la cantidad de víctimas fatales ha disminuido, pero sigue siendo una preocupación constante para las autoridades.</p>
+
+        <h2>Consejos para manejar seguro</h2>
+        <div class="section">
+            <p>Para reducir los accidentes, sigue estas recomendaciones:</p>
+            <ul>
+                <li><span class="highlight">Mantén una distancia segura:</span> Deja al menos dos segundos de distancia entre tu vehículo y el de enfrente.</li>
+                <li><span class="highlight">Respeta los límites de velocidad:</span> Especialmente en zonas urbanas.</li>
+                <li><span class="highlight">Usa siempre el cinturón de seguridad:</span> Reduce hasta un 50% el riesgo de muerte en un accidente.</li>
+                <li><span class="highlight">Evita distracciones:</span> No uses el teléfono móvil ni manipules la radio mientras conduces.</li>
+                <li><span class="highlight">Revisa tu vehículo:</span> Asegúrate de que los frenos, llantas, luces y motor estén en buen estado.</li>
+            </ul>
+        </div>
+
+        <img src="imagen2.jpg" alt="Recomendaciones para conducir seguro">
+
+        <h2>Calles con más accidentes</h2>
+        <div class="section">
+            <p>Algunas de las calles menos seguras para transitar en Hermosillo:</p>
+            <ul>
+                <li><span class="highlight">Blvd. José María Morelos y Blvd. Francisco Eusebio Kino:</span> 230 reportes de accidentes.</li>
+                <li><span class="highlight">Blvd. Luis Donaldo Colosio y Blvd. Antonio Quiroga:</span> 162 reportes.</li>
+                <li><span class="highlight">Av. de la Reforma y Blvd. Juan Navarrete:</span> 150 reportes.</li>
+            </ul>
+            <p>El tráfico en estas zonas es elevado, por lo que se recomienda extremar precauciones y respetar los señalamientos de tránsito.</p>
+        </div>
+
+        <h2>¿Qué hacer en caso de un choque?</h2>
+        <div class="section">
+            <p><span class="highlight">Mantén la calma:</span> Respira profundo y evalúa la situación antes de actuar.</p>
+            <p><span class="highlight">Verifica si hay heridos:</span> Si hay personas lesionadas, <span class="highlight">llama inmediatamente al 911</span> y proporciona información clara sobre el accidente.</p>
+            <p><span class="highlight">Asegura el área:</span> Si el choque es menor, mueve los vehículos a un lugar seguro para evitar bloquear el tráfico.</p>
+            <p><span class="highlight">Llama a las autoridades:</span> La policía tomará el reporte y determinará la responsabilidad.</p>
+            <p><span class="highlight">Intercambia información:</span> Nombre, dirección, teléfono, número de placa, aseguradora y toma fotos del accidente.</p>
+            <p><span class="highlight">No admitas culpa:</span> Espera a que las autoridades realicen su investigación antes de asumir responsabilidad.</p>
+            <p><span class="highlight">Reporta el accidente a tu aseguradora:</span> Contacta a tu aseguradora lo antes posible para iniciar el proceso de reclamación.</p>
+        </div>
+
+        <img src="imagen3.jpg" alt="Accidente vial en Hermosillo">
+
+        <div class="form-container">
+            <h2>Reporta calles con accidentes</h2>
+            <p>Si has visto un accidente en alguna calle de Hermosillo, ayúdanos a reportarlo.</p>
+            <input type="text" id="calle" placeholder="Escribe la calle aquí">
+            <button onclick="enviarReporte()">Enviar Reporte</button>
+        </div>
+
+    </div>
+
+    <script>
+        function enviarReporte() {
+            var calle = document.getElementById("calle").value;
+            if (calle.trim() !== "") {
+                alert("¡Gracias por tu reporte sobre la calle: " + calle + "!");
+                document.getElementById("calle").value = "";
+            } else {
+                alert("Por favor, ingresa una calle.");
+            }
+        }
+    </script>
+
+</body>
+</html>
